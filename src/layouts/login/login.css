@@ -1,0 +1,28 @@
+/* login.css */
+
+.login {
+    height: 100vh;
+  }
+  
+  .login__wrapper {
+    height: 100%;
+  }
+  
+  .login__details {
+    max-width: 57.4rem;
+    margin: 0 auto;
+  }
+
+  .login__layout {
+    background-color: #c9dbf3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login__layout--image {
+    height: 79.5rem;
+    width: 62.7rem;
+  }
+  

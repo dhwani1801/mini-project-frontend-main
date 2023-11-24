@@ -1,0 +1,66 @@
+.login-body__top--title {
+  font-weight: 700;
+  font-size: 3.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.login-body__top--description > p {
+  font-size: 17px;
+ 
+  margin-bottom: 2.4rem;
+}
+
+.login-body__center {
+  /* Your styles for the login-body__center container */
+}
+
+.login-body__remberme-forgot--remeber-me {
+  font-size: 16px !important;
+  margin-bottom: 2.5rem;
+  font-weight: 500 !important;
+  color: #27272e;
+  width: max-content;
+  margin-right: auto;
+}
+
+.login-body__remberme-forgot--forgot-password {
+  font-size: 16px;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  color: #286fd1;
+  width: max-content;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.login-body__end--button {
+  width: 100%;
+  font-size: 2rem !important;
+  background: #286fd1;
+  height: 5.4rem !important;
+  margin-bottom: 2.5rem;
+}
+
+.login-body__end--button:hover {
+  background: #286fd1 !important;
+}
+
+.login-body__account-text {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.login-body__account-text:hover {
+  cursor: pointer;
+}
+
+.login-body__account-text--text {
+  margin-right: 1rem;
+}
+
+.login-body__account-text--link {
+  height: 25px;
+  border-bottom: 2px solid #1677ff;
+}
