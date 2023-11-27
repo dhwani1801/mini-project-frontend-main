@@ -15,7 +15,7 @@ const RegisterLayout = (props: any) => {
           <Image
             className="register__layout--image"
             src="/assets/images/login.png"
-            preview={false}
+            preview={false} 
             alt="register"
           />
         </Col>

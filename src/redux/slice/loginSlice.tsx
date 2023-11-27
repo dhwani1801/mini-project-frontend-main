@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { loginAction } from "./loginAction";
-import { toastText } from "../utils/utils";
+import { loginAction } from "../action/loginAction";
+import { toastText } from "../../utils/utils";
 
 const initialState: any = {
   isLoading: false,

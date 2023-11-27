@@ -11,6 +11,7 @@ const LoginLayoutBody = (props: any) => {
     title,
     description,
     formData: loginFields,
+    setPhoneNumber,
     buttonTitle,
     redirectText,
     redirectUrl,
@@ -35,7 +36,7 @@ const LoginLayoutBody = (props: any) => {
         </div>
         <div className="login-body__center">
           {loginFields.map((singleUserInput: any, key: any) => (
-            <InputWithLabelAndSvg key={key} singleUserInput={singleUserInput} />
+            <InputWithLabelAndSvg key={key} singleUserInput={singleUserInput} setPhoneNumber={setPhoneNumber}/>
           ))}
         </div>
         <div className="login-body__remberme-forgot">

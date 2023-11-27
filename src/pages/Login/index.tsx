@@ -1,7 +1,7 @@
 import LoginLayout from "../../layouts/login";
 import { FORMDATA } from "../../constants/data";
 import { LoginLayoutBody } from "../../components/Login";
-import { loginAction } from "../../redux/loginAction";
+import { loginAction } from "../../redux/action/loginAction";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 

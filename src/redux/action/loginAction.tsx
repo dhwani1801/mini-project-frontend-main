@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { postApi } from './apis';
+import { postApi } from '../apis';
 
 export const loginAction = createAsyncThunk(
   "auth/Login",
@@ -15,3 +15,4 @@ export const loginAction = createAsyncThunk(
     }
   }
 );
+  
