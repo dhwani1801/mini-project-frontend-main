@@ -1,0 +1,29 @@
+.menu-item {
+	background-color: #fff;
+	.ant-menu-item {
+		padding: 10px !important;
+		margin: 0 !important;
+		width: 100%;
+		height: auto !important;
+		gap: 8px;
+		.ant-menu-title-content {
+			font-size: 1.8rem !important;
+			color: #000;
+			font-weight: 600;
+		}
+	}
+	.ant-menu-item-selected {
+		background-color: #F3F8FF !important;
+		margin: 0;
+		border-left: 2px #0074FF solid;
+		border-radius: unset;
+		width: 100%;
+	}
+	.ant-menu-item-active {
+		background-color: #F3F8FF !important;
+		border-radius: unset;
+	}
+}
+.ant-layout-sider-children {
+	height: 100%;
+}

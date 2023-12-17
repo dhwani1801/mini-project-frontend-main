@@ -20,3 +20,7 @@ export const postApi = (url: string, apiData?: any, flag?: boolean) => {
 export const putApi = (url : string , apiData? : any , flag? : boolean) => {
   return axios.put(`${endPoint}${url}`);
 }
+
+export const deleteApi = (url: string) => {
+  return axios.delete(`${endPoint}${url}`, apiConfig());
+};

@@ -2,7 +2,7 @@
 import { Button, Form } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import InputWithLabelAndSvg from "../../InputWithLabel";
-import "./register.css";
+import "./customer.css";
 
 const RegisterLayoutBody = (props: any) => {
   const {

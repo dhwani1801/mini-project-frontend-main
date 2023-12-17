@@ -12,12 +12,11 @@ const Login = () => {
     dispatch(loginAction(values) as any)
       .unwrap()
       .then((res: any) => {
-        navigate("/dashboard");
+        navigate("/home");
       })
       .catch((error: any) => {
-        console.error(error)
-      }
-      )
+        console.error(error);
+      });
   };
 
   return (

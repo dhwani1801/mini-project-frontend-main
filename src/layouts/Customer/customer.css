@@ -1,0 +1,39 @@
+/* styles.css */
+
+.register {
+    height: 100vh;
+  }
+  
+  .register__wrapper {
+    height: 100%;
+  }
+  
+  .register__details {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  
+  .register__details--logo {
+    height: 30%;
+    width: 30%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .register__details--logo > img {
+    height: 50%;
+    width: 50%;
+  }
+  
+  .register__layout {
+    background-color: #c9dbf3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register__layout--image {
+    height: 79.5rem;
+    width: 62.7rem;
+  }
+  

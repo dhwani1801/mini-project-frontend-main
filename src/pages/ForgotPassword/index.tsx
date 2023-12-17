@@ -1,6 +1,6 @@
 import { LoginLayoutBody } from "../../components/Login";
 import { FORMDATA } from "../../constants/data";
-import  LoginLayout from '../../layouts/login'
+import LoginLayout from "../../layouts/login";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { postApi } from "../../redux/apis";
@@ -8,7 +8,6 @@ import { loginAction } from "../../redux/action/loginAction";
 import { toastText } from "../../utils/utils";
 
 const ForgotPassword = () => {
-
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -16,12 +15,11 @@ const ForgotPassword = () => {
     setIsLoading(true);
 
     try {
-
       const response = await postApi("/auth/forgot-password", values);
+      console.log("inside forget password", response);
       const message = response?.data?.message;
 
       if (message) {
-
         toastText(message, "success");
       } else {
         throw new Error("No message in response.");

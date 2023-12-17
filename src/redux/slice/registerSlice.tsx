@@ -20,7 +20,6 @@ const registerSlice = createSlice({
       state.isLoading = false;
       localStorage.setItem("accessToken", action?.payload?.data?.accessToken);
       localStorage.setItem("refreshToken", action?.payload?.data?.refreshToken);
-      toastText(action?.payload?.message, "success");
     });
     builder.addCase(registerAction.rejected, (state, action: any) => {
       state.isLoading = false;

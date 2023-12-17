@@ -1,7 +1,7 @@
 import toast from "react-hot-toast";
 
 export const toastText = (message: string, type: string) => {
-  console.log('inside toast text');
+  console.log("inside toast text");
 
   const commonStyle = {
     style: {
@@ -17,5 +17,27 @@ export const toastText = (message: string, type: string) => {
     case "error":
       toast.error(message, commonStyle);
       break;
+  }
+};
+
+export const checkPermission = (
+  allPermissions: any,
+  requiredPermission: any
+) => {
+  if (!allPermissions) {
+    return false;
+  }
+  const permissionsList = allPermissions;
+  const permission = permissionsList?.find(
+    (singlePermission: any) =>
+      singlePermission.permissionName === requiredPermission.permissionName
+  );
+  if (permission) {
+    const permitted = requiredPermission.permission.some(
+      (singlePermission: string) => permission[singlePermission]
+    );
+    return permitted || permission["all"];
+  } else {
+    return false;
   }
 };
