@@ -1,4 +1,4 @@
-/* styles.css */
+/* styles.css
 
 .register {
     height: 100vh;
@@ -36,4 +36,50 @@
     height: 79.5rem;
     width: 62.7rem;
   }
-  
+   */
+   /* styles.css */
+
+/* styles.css */
+
+.register {
+  height: 100vh;
+}
+
+.register__wrapper {
+  height: 100%;
+}
+
+.register__details {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.register__details--body {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register__details--logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.register__details--logo > img {
+  height: 100%;
+  width: auto;
+}
+
+.register__layout {
+  background-color: #f0f0f0; /* Light gray background for form layout */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__layout--image {
+  display: none; /* Hide the image for customer creation form */
+}

@@ -262,6 +262,10 @@ export const FORMDATA = {
       key: "dashboard",
       label: "Integrations",
     },
+    {
+      key: "customer",
+      label: "Customer",
+    },
   ],
   quickBookCustomerFields: [
     {

@@ -21,7 +21,7 @@ const Header = () => {
         >
           <Col className={styles["header__details-left"]}>
             <div className={styles["header__details-left--logo"]}>
-              <Image
+              {/* <Image
                 src={'/assets/images/animal_planet_logo.png'}
                 preview={false}
                 alt="group"
@@ -30,21 +30,21 @@ const Header = () => {
                     ? undefined
                     : "anonymous"
                 }
-              />
+              /> */}
             </div>
           </Col>
           <Col className={styles["header__details-right"]}>
             
             <Tooltip placement="bottom" title={`Log out`}>
               <div className={styles["header__details-right--user-logout"]}>
-                <LogoutOutlined
+                {/* <LogoutOutlined
                   style={{
                     cursor: isLogoutBtnClick ? "not-allowed" : "pointer",
                     pointerEvents: isLogoutBtnClick ? "none" : "auto",
                     fontSize: 23,
                     color: "#727272",
                   }}
-                />
+                /> */}
               </div>
             </Tooltip>
           </Col>

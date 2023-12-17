@@ -119,7 +119,7 @@ const Customer = () => {
   return (
     <CustomerLayout>
       <RegisterLayoutBody
-        title="Customer"
+        // title="Customer"
         description="<p>Please Enter customer details Details.</p>"
         formData={FORMDATA.quickBookCustomerFields}
         buttonTitle="Submit!"
