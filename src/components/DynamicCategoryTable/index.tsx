@@ -1,15 +1,12 @@
 import { Button, Space, Table } from "antd";
 import { FC, useEffect, useState } from "react";
 import styles from "./index.module.scss";
-//import IntegrationModal from "components/Global/IntegrationModel";
 import { DynamicCategoryTableProps } from "./types";
 import { getApi } from "../../redux/apis";
 import { useNavigate } from "react-router";
 import { toastText } from "../../utils/utils";
 
 const DynamicCategoryTable: FC<DynamicCategoryTableProps> = (props) => {
-  // Inits
-
   const navigate = useNavigate();
 
   const { dataSource, type } = props;
@@ -54,16 +51,6 @@ const DynamicCategoryTable: FC<DynamicCategoryTableProps> = (props) => {
     }
   };
 
-  //   For cancel operation
-  const handleCancel = () => {
-    setSelectCompany(false);
-    setIsModalOpen(false);
-  };
-  //
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -75,10 +62,6 @@ const DynamicCategoryTable: FC<DynamicCategoryTableProps> = (props) => {
       setTitleKey(card.titleKey);
       setSoftwareType(card.type);
       showModal();
-    }
-    //Clear Books
-    if (card.titleKey == "Clear Books") {
-      setTitleKey(card.titleKey);
     }
 
     // QuickbooksOnline
@@ -180,19 +163,6 @@ const DynamicCategoryTable: FC<DynamicCategoryTableProps> = (props) => {
           )}
         />
       </Table>
-      {/* <IntegrationModal
-        handleCancel={handleCancel}
-        handleOk={handleOk}
-        isModalOpen={isModalOpen}
-        formData={formData}
-        isLoading={isLoading}
-        titleKey={titleKey}
-        SetButtonLabel={SetButtonLabel}
-        ButtonLabel={ButtonLabel}
-        softwareType={softwareType}
-        selectCompany={selectCompany}
-        setSelectCompany={setSelectCompany}
-      /> */}
     </div>
   );
 };

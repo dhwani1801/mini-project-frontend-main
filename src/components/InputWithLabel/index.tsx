@@ -15,12 +15,14 @@ const InputWithLabelAndSvg = (props: any) => {
   };
   useEffect(() => {
     // setPhoneNumber(num);
-  }, [num]);
+console.log("jhjh",singleUserInput)
+  }, []);
 
 
 
   return (
     <div className={styles["input-icon"]}>
+      
       {singleUserInput.id !== "phone" ? (
         <>
           <div className={styles["input-icon__title"]}>

@@ -19,6 +19,8 @@ const RegisterLayoutBody = (props: any) => {
 
   const navigate = useNavigate();
 
+  console.log("My register: ",registerFields)
+
   const onFinishFailed = () => {
     console.log("first");
     // Regular expression to validate a phone number
@@ -49,8 +51,9 @@ const RegisterLayoutBody = (props: any) => {
             </div>
           )}
         </div>
-        <div className="register-body__center">
+        <div className="inputcenter">
           {registerFields.map((singleUserInput: any, key: any) => (
+            
             <InputWithLabelAndSvg
               key={key}
               singleUserInput={singleUserInput}

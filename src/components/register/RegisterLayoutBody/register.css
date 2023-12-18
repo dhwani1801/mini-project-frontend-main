@@ -1,4 +1,4 @@
-.register-body__center {
+.inputcenter {
   display: inline-grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 2rem;
@@ -72,8 +72,6 @@
 .register-body__end--button:hover {
   background: #286fd1 !important;
 }
-
-
 
 
 

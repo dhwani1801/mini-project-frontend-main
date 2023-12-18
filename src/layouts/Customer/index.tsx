@@ -6,7 +6,7 @@ const CustomerLayout = (props: any) => {
   const { children } = props;
   return (
     <div className="register">
-      <Row className="register__wrapper" justify="space-between" align="middle">
+      <Row className="register__wrapper " justify="space-between" align="top" gutter={[16, 16]}>
         {/* <Col className="register__layout" span={11}>
           <Image
             className="register__layout--image"
@@ -15,7 +15,7 @@ const CustomerLayout = (props: any) => {
             alt="register"
           />
         </Col> */}
-        <Col className="register__details" span={13}>
+        <Col >
           <div className="register__details--body">{children}</div>
         </Col>
       </Row>

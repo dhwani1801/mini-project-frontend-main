@@ -6,7 +6,6 @@ export const CustomerAction = createAsyncThunk(
   async (data: any, { rejectWithValue }) => {
     try {
       const response = await postApi("/qbo/customer/:companyId", data);
-      console.log('response: ', response);
       return response.data;
     } catch (error: any) {
       if (!error.response) {

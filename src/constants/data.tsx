@@ -174,20 +174,6 @@ export const FORMDATA = {
           message: "Please input your phone number!",
           validationTrigger: "onBlur",
         },
-        // ({ getFieldValue }: any) => ({
-        //   validator() {
-        //     const re = /^(\+\d{1,3}[- ]?)?\d{10}$/;
-        //     if (getFieldValue("phone") !== undefined) {
-        //       if (re.test(getFieldValue("phone"))) {
-        //         return Promise.resolve();
-        //       } else {
-        //         return Promise.reject(new Error("Please enter phone number"));
-        //       }
-        //     }
-        //     return Promise.reject();
-        //   },
-        //   validateTrigger: "onSubmit",
-        // }),
       ],
     },
   ],
@@ -273,7 +259,6 @@ export const FORMDATA = {
       id: "Name",
       type: "text",
       name: "Name",
-      svg: <UserOutlined />,
       placeHolder: "",
       required: true,
       rules: [
@@ -289,7 +274,7 @@ export const FORMDATA = {
       id: "email",
       type: "text",
       name: "email",
-      svg: <MailOutlined />,
+      // svg: <MailOutlined />,
       placeHolder: "",
       required: true,
       rules: [
@@ -340,7 +325,7 @@ export const FORMDATA = {
       id: "Line1",
       type: "text",
       name: "Line1",
-      svg: <UserOutlined />,
+      // svg: <UserOutlined />,
       placeHolder: "",
       required: true,
       rules: [
@@ -356,7 +341,7 @@ export const FORMDATA = {
       id: "City",
       type: "text",
       name: "City",
-      svg: <UserOutlined />,
+      // svg: <UserOutlined />,
       placeHolder: "",
       required: true,
       rules: [
@@ -372,7 +357,7 @@ export const FORMDATA = {
       id: "Country",
       type: "text",
       name: "Country",
-      svg: <UserOutlined />,
+      // svg: <UserOutlined />,
       placeHolder: "",
       required: true,
       rules: [
@@ -388,7 +373,7 @@ export const FORMDATA = {
       id: "PostalCode",
       type: "text",
       name: "PostalCode",
-      svg: <UserOutlined />,
+      // svg: <UserOutlined />,
       placeHolder: "",
       required: true,
       rules: [
@@ -409,10 +394,6 @@ export const integrationDataSource: any = [
       connection: "QBO",
       company: "sandbox",
     },
-    // Ecommerce_Software: {
-    //   connection: "Magento",
-    //   company: "Magento 1",
-    // },
     Status: true,
     tags: ["nice", "developer"],
   },
@@ -422,10 +403,6 @@ export const integrationDataSource: any = [
       connection: "XERO",
       company: "sandbox",
     },
-    // Ecommerce_Software: {
-    //   connection: "Shopify",
-    //   company: "shopify 1",
-    // },
     Status: false,
     tags: ["nice", "developer"],
   },

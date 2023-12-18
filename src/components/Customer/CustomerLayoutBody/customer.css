@@ -2,7 +2,7 @@
   display: inline-grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 2rem;
-  width: 70rem;
+  width: 120rem;
 }
 
 .register-body__top--title {
@@ -67,12 +67,17 @@
   font-size: 2rem !important;
   background: #286fd1;
   margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .register-body__end--button:hover {
   background: #286fd1 !important;
 }
 
+
+.customer_wrapper{
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
 
 
 

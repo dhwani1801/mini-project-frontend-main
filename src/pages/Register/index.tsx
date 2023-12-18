@@ -63,7 +63,7 @@ const Register = () => {
 							Please Enter your
 							Details.
 						</p>"
-        formData={[FORMDATA.registerFields]}
+        formData={FORMDATA.registerFields}
         buttonTitle={"Register Now!"}
         accountText={"Already have an account?"}
         accountUrl={"Login Now!"}

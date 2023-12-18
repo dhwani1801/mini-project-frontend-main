@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import InputWithLabelAndSvg from "../../InputWithLabel";
 import "./customer.css";
 
-const RegisterLayoutBody = (props: any) => {
+const CustomerLayoutBody = (props: any) => {
   const {
     title,
     onSubmit,
@@ -21,22 +21,12 @@ const RegisterLayoutBody = (props: any) => {
 
   const onFinishFailed = () => {
     console.log("first");
-    // Regular expression to validate a phone number
-    // const re = /^(\+\d{1,3}[- ]?)?\d{10}$/;
-
-    // if (phoneNumber === "") {
-    //   setPhoneError("Please enter phone number");
-    // } else if (!re.test(phoneNumber)) {
-    //   setPhoneError("Please enter a valid phone number");
-    // } else {
-    //   setPhoneError("");
-    // }
   };
 
   return (
     <div className="register-body">
       <Form
-        className="register-body__wrapper"
+        className="register-body__wrapper "
         name="basic"
         onFinishFailed={onFinishFailed}
         onFinish={onSubmit}
@@ -49,7 +39,7 @@ const RegisterLayoutBody = (props: any) => {
             </div>
           )}
         </div>
-        <div className="register-body__center">
+        <div className="register-body__center customer_wrapper">
           {registerFields.map((singleUserInput: any, key: any) => (
             <InputWithLabelAndSvg
               key={key}
@@ -57,9 +47,6 @@ const RegisterLayoutBody = (props: any) => {
               setPhoneNumber={setPhoneNumber}
             />
           ))}
-        </div>
-
-        <div className="register-body__end">
           <Button
             type="primary"
             className="register-body__end--button"
@@ -72,6 +59,10 @@ const RegisterLayoutBody = (props: any) => {
               buttonTitle
             )}
           </Button>
+        </div>
+
+        <div className="register-body__end">
+          
         </div>
         {accountText && accountUrl && (
           <div className="register-body__account-text">
@@ -88,4 +79,4 @@ const RegisterLayoutBody = (props: any) => {
   );
 };
 
-export default RegisterLayoutBody;
+export default CustomerLayoutBody;
